@@ -1,0 +1,45 @@
+* {
+    font-family: 'EB Garamond', serif;
+    font-weight: bold;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.title {
+    padding-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+form {
+    background-color: white;
+    border: gray solid 1px;
+    /*color: #85919e;*/
+    padding: 50px;
+    border-radius: 30px;
+    max-width: 30rem;
+}
+
+.btn {
+    background-color: #2c2b2b;
+    color: white;
+}
+
+.btn:hover {
+    color: #bcbebf;
+}
+
+input {
+    font-weight: normal;
+}
+
+a {
+    color: #00206c;
+}
