@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Home Page</title>
 
     <!--BOOSTRAP-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -52,17 +52,11 @@
             background-color: rgba(207, 232, 220, 0.7);
         }
 
-        .feedback {
-            background-color: rgba(79, 185, 227, 0.3);
-            border: 1px solid rgb(79, 185, 227);
-            padding: 10px;
-        }
-
         article {
             margin-bottom: 1em;
         }
 
-        @media screen and (min-width: 30em) {
+        @media screen and (min-width: 700px) {
 
             nav {
 
@@ -102,12 +96,19 @@
 
         .feedback {
             margin-top: 20px;
+            background-color: rgba(79, 185, 227, 0.3);
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .feedback .col-sm-2, .col-sm-8 {
+            font-style: normal;
         }
 
         footer {
             background-color: #eae3d1;
             color: black;
-            font-size: 1.3em;
+            font-size: 1em;
             font-style: normal;
             padding: 20px;
         }
@@ -121,7 +122,10 @@
 <div class="wrapper">
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Logo - Name</a>
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-journal-code"></i>
+                <span id="name-web">My Diary</span>
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -150,12 +154,14 @@
 
                 <div><img src="i.png" alt="main template"></div>
             </div>
+
+            <div style="text-align: center; text-transform: uppercase; padding-top: 30px">User feedback</div>
+
             <div class="feedback">
-                <div>User feedback</div>
                 <div class="row">
-                    <div class="col-sm-2"><i>User-name</i></div>
-                    <div class="col-sm-8"><i>Say something</i></div>
-                    <div class="col-sm-2"><i>Rating</i></div>
+                    <div class="col-sm-2">User-name</div>
+                    <div class="col-sm-8">Say something</div>
+                    <div class="col-sm-2">Rating</div>
                 </div>
             </div>
         </div>
@@ -165,7 +171,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-9">
-                    <img src="" alt="">Logo
+                    <img src="" alt="">My Diary
                     <div>
                         <i class="bi bi-facebook"></i>
                         <i class="bi bi-skype"></i>

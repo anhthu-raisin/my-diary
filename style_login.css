@@ -43,3 +43,7 @@ input {
 a {
     color: #00206c;
 }
+
+.form-group input{
+    font-size: 0.7em;
+}

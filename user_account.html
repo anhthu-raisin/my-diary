@@ -22,55 +22,67 @@
             font-weight: bold;
         }
 
-        main {
-            width: 90%;
-            margin: 2rem auto;
+        .container {
+            padding: 30px;
+            width: 100%;
+            height: 100%;
         }
 
-        .container {
-            background-color: white;
-            border: gray solid 1px;
-            /*color: #85919e;*/
-            padding: 50px;
-            border-radius: 30px;
-            max-width: 40rem;
-            height: 40rem;
+        .col-setting {
+            display: grid;
+            grid-template-columns: auto;
+        }
+
+        .btn-select {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+        }
+
+        a {
+            color: black;
+        }
+
+        .btn-select a {
+            width: 250px;
+            align-items: center;
         }
     </style>
 </head>
 <body>
 <div class="container">
     <div class="row">
-        <div class="col-sm-3">Settings</div>
-        <div class="col-sm-9">Account</div>
-    </div>
-    <div class="row">
-        <div class="col-sm-3">
-            <ul>
-                <li><a href="user_account.html">Account</a></li>
-                <li><a href="#">General</a></li>
-                <li><a href="#">Notification</a></li>
-            </ul>
+        <div class="col-sm-3 col-setting">
+            <h4>Setting</h4>
+            <a href="user_account.html">Account</a>
+            <a href="#">General</a>
+            <a href="#">Notification</a>
         </div>
         <div class="col-sm-9">
+            <h4>Account</h4>
             <form action="">
                 <div class="form-group">
-                    <img src="" alt="user-image">
-                    <button>Upload photo</button>
+                    <label class="form-label" for="customFile">Choose your avatar</label>
+                    <input type="file" class="form-control" id="customFile" />
                 </div>
+
+                <div class="form-group">
+                    <label for="name">User name:</label>
+                    <input type="text" class="form-control" value="Le Thi Anh Thu" id="name">
+                </div>
+
                 <div class="form-group">
                     <label for="email">Email address:</label>
-                    <input type="email" class="form-control" placeholder="Enter email" id="email">
-                    <button>Change email</button>
+                    <input type="email" class="form-control" value="thu.le190203@vnuk.edu.vn" id="email">
                 </div>
 
                 <div class="form-group">
                     <a href="#">Change password</a>
                 </div>
 
-                <div class="form-group">
-                    <button type="submit">Save</button>
-                    <button><a href="home_page.html">Cancel</a></button>
+                <div class="form-group btn-select">
+                    <a type="button" class="btn btn-primary">Save</a>
+                    <a type="button" class="btn btn-secondary" href="home_page.html">Cancel</a>
                 </div>
             </form>
         </div>
